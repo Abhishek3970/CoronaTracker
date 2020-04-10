@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal|center_vertical"
     android:background="@drawable/dialog_bg"
-    android:padding="14dp"
     android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="30dp">
 
     <TextView
         android:id="@+id/country"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="15dp"
         android:text="Country"
         android:textColor="@android:color/black"
-        android:textSize="24sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/cases"
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:text="cases"
         android:textColor="@android:color/holo_blue_dark"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/active"
@@ -31,7 +32,7 @@
         android:layout_height="wrap_content"
         android:text="active"
         android:textColor="@android:color/holo_blue_dark"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/todayCases"
@@ -39,7 +40,7 @@
         android:layout_height="wrap_content"
         android:text="todayCases"
         android:textColor="@android:color/holo_blue_dark"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/critical"
@@ -47,7 +48,7 @@
         android:layout_height="wrap_content"
         android:text="critical"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/deaths"
@@ -55,7 +56,7 @@
         android:layout_height="wrap_content"
         android:text="deaths"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/todayDeaths"
@@ -63,7 +64,16 @@
         android:layout_height="wrap_content"
         android:text="todayDeaths"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/deathPerOneMillion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="deathsPerOneMillion"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp" />
+
 
     <TextView
         android:id="@+id/recovered"
@@ -71,7 +81,24 @@
         android:layout_height="wrap_content"
         android:text="recovered"
         android:textColor="@android:color/holo_green_dark"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tests"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/testPerOneMillion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="testPerOneMillion"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp" />
 
 
     <TextView
@@ -79,7 +106,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="casesPerOneMillion"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
 
 </LinearLayout>

@@ -75,6 +75,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val todayDeaths:TextView = dialog.findViewById(R.id.todayDeaths)
         val recovered:TextView = dialog.findViewById(R.id.recovered)
         val casesPerOneMillion:TextView = dialog.findViewById(R.id.casesPerOneMillion)
+        val tests:TextView = dialog.findViewById(R.id.tests)
+        val testsPerOneMillion:TextView = dialog.findViewById(R.id.testPerOneMillion)
+        val deathPerOneMillion:TextView = dialog.findViewById(R.id.deathPerOneMillion)
 
         country.text = data.country
         cases.text = "Cases: " + data.cases
@@ -85,6 +88,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         todayDeaths.text = "Today's Deaths: "+data.todayDeath
         recovered.text = "Recovered: "+data.recovered
         casesPerOneMillion.text ="Cases Per One Million: " + data.casePerMillion
+        tests.text = "Tests: "+ data.tests
+        testsPerOneMillion.text = "TestsPerOneMillion: "+ data.testsPerOneMillion
+        deathPerOneMillion.text = "DeathPerOneMillion: "+ data.deathsPerOneMillion
+
 
 
         dialog.show()
@@ -118,19 +125,23 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
                     data.add(
                         Data(
-                            item.getString("country"),
-                            item.getInt("cases").toString(),
-                            item.getInt("active").toString(),
-                            item.getInt("todayCases").toString(),
-                            item.getInt("critical").toString(),
-                            item.getInt("todayDeaths").toString(),
-                            item.getInt("recovered").toString(),
-                            item.getInt("casesPerOneMillion").toString(),
-                            item.getInt("deaths").toString(),
-                            itemLatLong
+                            country = item?.getString("country"),
+                            cases = item?.getString("cases").toString(),
+                            active = item?.getString("active").toString(),
+                            todayCases = item?.getString("todayCases").toString(),
+                            critical = item?.getString("critical").toString(),
+                            todayDeath = item?.getString("todayDeaths").toString(),
+                            recovered = item?.getString("recovered").toString(),
+                            casePerMillion = item?.getString("casesPerOneMillion").toString(),
+                            deaths = item?.getString("deaths").toString(),
+                            tests = item?.getString("tests").toString(),
+                            deathsPerOneMillion= item?.getString("deathsPerOneMillion").toString(),
+                            testsPerOneMillion= item?.getString("testsPerOneMillion").toString(),
+                            latLong = itemLatLong
                         )
                     )
 
+//                        Log.i("ct" , item?.getString("country"))
 
                 }
             },
