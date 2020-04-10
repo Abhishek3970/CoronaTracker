@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "651466919263",
+    "firebase_url": "https://corona-in-india.firebaseio.com",
+    "project_id": "corona-in-india",
+    "storage_bucket": "corona-in-india.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651466919263:android:ded9b0d26a5c08e9847aea",
+        "android_client_info": {
+          "package_name": "com.example.coronainindia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651466919263-tf08m02puafe6dcosjin04oort7uoh0g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.coronainindia",
+            "certificate_hash": "c4b90e2bf9f981e69cc3490b716609aaebf0b3e5"
+          }
+        },
+        {
+          "client_id": "651466919263-a2v4810qboejjmmof6tn0j54j2b4ekbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmPmZBvg_t6-qIgD49xNFQLu1B7B_5fcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651466919263-a2v4810qboejjmmof6tn0j54j2b4ekbv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
